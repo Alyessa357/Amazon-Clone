@@ -24,10 +24,8 @@
   line-height: 1.35;
   color: #0f1111;
   background: #f0f2f2;
-  /* border: 1px solid #d5d9d9; */
   border: 1px solid black;
   border-radius: 8px;
-  /* box-shadow: 0 1px 2px rgba(15, 17, 17, 0.08); */
   cursor: pointer;
   text-align: left;
   transition: background 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
@@ -49,10 +47,6 @@
   font-size: 12px;
   min-width: 0;
 }
-
-/* .sort-by__trigger-value {
-  font-weight: 700;
-} */
 
 .sort-by__chevron {
   display: flex;
@@ -135,7 +129,7 @@
   border-radius: 0 2px 2px 0;
 }
 
-/* RESPONSIVE DESIGN */
+/* --------------------------------------------------RESPONSIVE DESIGN-------------------------------------------- */
 @media (max-width: 600px) {
   .sort-by__trigger {
     width: 100%;
