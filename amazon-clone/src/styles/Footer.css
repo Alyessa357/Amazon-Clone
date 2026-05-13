@@ -1,0 +1,39 @@
+footer {
+    background: #232f3e;
+    border-bottom: 1px solid #DDDDDD;
+
+    margin-top: auto;
+}
+.back-to-top {
+    height: 49px;
+    width: 100%;
+    background: #37475a;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav-links h4 {
+    color: white;
+    margin: 6px 0 14px 0;
+}
+
+.footer-link-col li {
+    list-style: none;
+    color: #DDDDDD;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.link-col-spacer {
+    width: 100px;
+    height: 292px;
+    padding: 0 10px;
+}

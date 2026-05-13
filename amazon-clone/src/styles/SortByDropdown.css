@@ -1,0 +1,151 @@
+/*AI FEATURE 1 - CHECKOUT FLOW */
+
+/* Amazon-style “Sort by” control (closed + open states) */
+
+.sort-by {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.sort-by button {
+    background: none;
+}
+
+.sort-by__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: min(100%, 220px);
+  padding: 3px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #0f1111;
+  background: #f0f2f2;
+  /* border: 1px solid #d5d9d9; */
+  border: 1px solid black;
+  border-radius: 8px;
+  /* box-shadow: 0 1px 2px rgba(15, 17, 17, 0.08); */
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.sort-by__trigger:hover {
+  background: #e3e6e6;
+  border-color: #cdcdcd;
+}
+
+.sort-by__trigger:focus {
+  outline: none;
+  border-color: #007185;
+  box-shadow: 0 0 0 2px rgba(0, 113, 133, 0.25);
+}
+
+.sort-by__trigger-text {
+  flex: 1;
+  font-size: 12px;
+  min-width: 0;
+}
+
+/* .sort-by__trigger-value {
+  font-weight: 700;
+} */
+
+.sort-by__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.sort-by__chevron svg {
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.sort-by__trigger[aria-expanded="true"] .sort-by__chevron svg {
+  transform: rotate(180deg);
+}
+
+.sort-by__menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  min-width: 100%;
+  width: max-content;
+  max-width: min(100vw - 24px, 280px);
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15), 0 8px 20px rgba(15, 17, 17, 0.08);
+  z-index: 20;
+}
+
+.sort-by__item {
+  margin: 0;
+  padding: 0;
+}
+
+.sort-by__option {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 16px 10px 14px;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #0f1111;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s ease;
+}
+
+.sort-by__option:hover {
+  background: #f3f3f3;
+}
+
+.sort-by__option--selected {
+  background: #e7f4f8;
+  font-weight: 400;
+}
+
+.sort-by__option--selected:hover {
+  background: #dceef3;
+}
+
+/* Left accent bar on selected row (Amazon) */
+.sort-by__option--selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #007185;
+  border-radius: 0 2px 2px 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .sort-by__trigger {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sort-by__menu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
+  }
+}

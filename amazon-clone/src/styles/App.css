@@ -1,0 +1,159 @@
+* {
+  transition: all 0.2s ease;
+}
+
+body {
+  /* background-color: #e3f0e3; */
+  background: #eaeded;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* .banner {
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/hero.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    margin-bottom: -450px;
+    mask-image: linear-gradient(to top, rgba(227, 240, 227, 0) 0%, #eaeded 40%, #f3f3f3 100%);
+    position: relative;
+}
+
+/* main */
+/* main {
+  display: flex;
+  width: 100%;
+  padding-top: 14px;
+  margin: 0 4.4px;
+} */
+
+/* aside {
+  width: 274px;
+  padding: 0 4px;
+}
+
+aside h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+aside span {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+aside ul {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+aside li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.filter-option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+} */
+
+/* .filter-option label {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  
+}
+
+.home-grid { */
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+} */
+
+/* .recommendations-frame {
+  background-color: white;
+  height: 188px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 148px;
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.recommendations h2 {
+  padding-bottom: 4px;
+}
+
+.recommendations button {
+  width: 242px;
+  height: 30px;
+  padding: 5px 11px;
+  border-radius: 25px;
+  border: none;
+  background: #ffd814;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.recommendations p {
+  font-size: 11px;
+} */ 
+
+
+
+
+
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+/* @media (max-width: 768px) {
+  .search input {
+    width: 150px;
+  }
+
+  .nav-tools div {
+    display: none;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+  }
+} */
+
+/* Responsive design */
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}

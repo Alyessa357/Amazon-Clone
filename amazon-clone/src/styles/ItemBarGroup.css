@@ -1,0 +1,22 @@
+.best-sellers {
+    background: white;
+    padding: 0px 20px;
+    margin: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 285px;
+}
+
+.best-sellers h3 {
+    font-size: 21px;
+}
+
+.item-bar-group {
+    display: flex;
+    justify-content: space-between;
+}
+.item-bar-group img {
+    width: 180px;
+    height: 130px;
+}

@@ -1,0 +1,178 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 1500px;
+}
+
+.banner {
+    height: 100vh;
+    height: clamp(220px, 45vw, 600px);
+    width: 100%;
+    background: url(../assets/hero.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    margin-bottom: -370px;
+    mask-image: linear-gradient(to top, rgba(227, 240, 227, 0) 0%, #eaeded 40%, #f3f3f3 100%);
+    position: relative;
+}
+
+.home-grid {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* =========================================
+   HOME PAGE CONTAINER
+========================================= */
+
+/* .home-page {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    overflow-x: hidden;
+} */
+
+/* =========================================
+   HERO BANNER
+========================================= */
+
+/* .banner {
+    width: 100%; */
+
+    /* Responsive height */
+    /* height: clamp(220px, 45vw, 600px);
+
+    background-image: url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    position: relative;
+    z-index: 0; */
+
+    /* Amazon fade effect */
+    /* mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 60%,
+        rgba(0,0,0,0)
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 60%,
+        rgba(0,0,0,0)
+    ); */
+
+    /* Pull grid upward */
+    /* margin-bottom: clamp(-250px, -18vw, -120px);
+} */
+
+/* =========================================
+   HOME GRID
+========================================= */
+
+/* .home-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+
+    width: 100%;
+} */
+
+/* =========================================
+   LARGE TABLETS
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner {
+        margin-bottom: -140px;
+    }
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .banner {
+        height: 320px;
+
+        margin-bottom: -110px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .home-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+        padding: 14px;
+    }
+
+    .banner {
+        height: 240px;
+
+        margin-bottom: -70px;
+
+        background-position: center;
+    }
+}
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .home-grid {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .banner {
+        height: 180px;
+
+        margin-bottom: -40px;
+    }
+}
